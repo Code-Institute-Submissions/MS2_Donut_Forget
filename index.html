@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donut Forget</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Sacramento&display=swap");
+    </style>
+     <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+   <!-- <div class="modalBackground">
+      <div id="start">
+        <h1>Press here to start!</h1>
+        <p>Good luck matching the donuts!</p>
+      </div>
+    </div>-->
+
+
+    <header>
+      <h1>Donut forget</h1>
+    </header>
+
+    <section id="gameGrid" class="game_grid">
+      <div class="cards" data-image="A">
+        <img class="front_card" src="/assets/images/A.jpg" alt="A" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="B">
+        <img class="front_card" src="/assets/images/B.jpg" alt="B" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="C">
+        <img class="front_card" src="/assets/images/C.jpg" alt="C" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="D">
+        <img class="front_card" src="/assets/images/D.jpg" alt="D" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="E">
+        <img class="front_card" src="/assets/images/E.jpg" alt="E" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="F">
+        <img class="front_card" src="/assets/images/F.jpg" alt="F" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="G">
+        <img class="front_card" src="/assets/images/G.jpg" alt="G" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="H">
+        <img class="front_card" src="/assets/images/H.jpg" alt="H" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="I">
+        <img class="front_card" src="/assets/images/I.jpg" alt="I" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="J">
+        <img class="front_card" src="/assets/images/J.jpg" alt="J" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="K">
+        <img class="front_card" src="/assets/images/K.jpg" alt="K" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="L">
+        <img class="front_card" src="/assets/images/L.jpg" alt="L" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="M">
+        <img class="front_card" src="/assets/images/M.jpg" alt="M" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="N">
+        <img class="front_card" src="/assets/images/N.jpg" alt="N" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="O">
+        <img class="front_card" src="/assets/images/O.jpg" alt="O" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="P">
+        <img class="front_card" src="/assets/images/P.jpg" alt="P" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="Q">
+        <img class="front_card" src="/assets/images/Q.jpg" alt="Q" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="R">
+        <img class="front_card" src="/assets/images/R.jpg" alt="R" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="A">
+        <img class="front_card" src="/assets/images/A.jpg" alt="A" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="B">
+        <img class="front_card" src="/assets/images/B.jpg" alt="B" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="C">
+        <img class="front_card" src="/assets/images/C.jpg" alt="C" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="D">
+        <img class="front_card" src="/assets/images/D.jpg" alt="D" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="E">
+        <img class="front_card" src="/assets/images/E.jpg" alt="E" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="F">
+        <img class="front_card" src="/assets/images/F.jpg" alt="F" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="G">
+        <img class="front_card" src="/assets/images/G.jpg" alt="G" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="H">
+        <img class="front_card" src="/assets/images/H.jpg" alt="H" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="I">
+        <img class="front_card" src="/assets/images/I.jpg" alt="I" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="J">
+        <img class="front_card" src="/assets/images/J.jpg" alt="J" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="K">
+        <img class="front_card" src="/assets/images/K.jpg" alt="K" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="L">
+        <img class="front_card" src="/assets/images/L.jpg" alt="L" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="M">
+        <img class="front_card" src="/assets/images/M.jpg" alt="M" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="N">
+        <img class="front_card" src="/assets/images/N.jpg" alt="N" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="O">
+        <img class="front_card" src="/assets/images/O.jpg" alt="O" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="P">
+        <img class="front_card" src="/assets/images/P.jpg" alt="P" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="Q">
+        <img class="front_card" src="/assets/images/Q.jpg" alt="Q" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+
+      <div class="cards" data-image="R">
+        <img class="front_card" src="/assets/images/R.jpg" alt="R" />
+        <img
+          class="back_card"
+          src="/assets/images/sprinkles.jpg"
+          alt="Sprinkles"
+        />
+      </div>
+    </section>
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
