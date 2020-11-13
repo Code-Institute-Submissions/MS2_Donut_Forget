@@ -18,8 +18,7 @@ body {
 
 body {
   background-color: #f48fb1;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  
   
 }
 
@@ -110,7 +109,7 @@ h1 {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-}
+
 #start h1 {
     font-family: "Open Sans", sans-serif;
   font-size: 48px;
@@ -144,14 +143,107 @@ h1 {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+
+#start h1 {
+font-family: "Open Sans", sans-serif;
+  font-size: 52px;
+  text-align: center;
 }
+
+#start p {
+     font-family: "Sacramento", cursive;
+  font-size: 36px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 96px;
+  text-align: center;
+}
+
+.game_grid {
+  width: 743px;
+  height: 743x;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  perspective: 1000px;
+  
+}
+
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+
+#start h1 {
+font-family: "Open Sans", sans-serif;
+  font-size: 52px;
+  text-align: center;
+}
+
+#start p {
+     font-family: "Sacramento", cursive;
+  font-size: 36px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 96px;
+  text-align: center;
+}
+
+.game_grid {
+  width: 967px;
+  height: 967x;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  perspective: 1000px;
+  
+}
+
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+
+#start h1 {
+font-family: "Open Sans", sans-serif;
+  font-size: 52px;
+  text-align: center;
+}
+
+#start p {
+     font-family: "Sacramento", cursive;
+  font-size: 36px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 96px;
+  text-align: center;
+}
+
+.game_grid {
+  width: 1175px;
+  height: 1175px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  perspective: 1000px;
+  
+}
+
 
 } 
