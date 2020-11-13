@@ -24,7 +24,7 @@ $(document).ready(function () {
     if (!$(this).hasClass("selected")) {
       $(this).toggleClass("flip");
       $(this).addClass("selected");
-      
+      console.log("dataset-image");
     }
 
     selectingCards();
@@ -50,7 +50,7 @@ $(document).ready(function () {
   }
 
   function hideMatchedCards(){
-$(".cards.flip.selected").removeClass("selected").animate({opacity: 0});
+$(".cards.flip.selected").removeClass("selected").animate({opacity: 0}, {duration: 2000});
 
   }
 
