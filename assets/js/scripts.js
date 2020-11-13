@@ -1,25 +1,28 @@
 $(document).ready(function () {
 
-    const cards = document.querySelectorAll(".cards");
     
+
   //let hasFlippedCard = false;
   let lockGrid = false;
   //let firstCard, secondCard;
 
-  // function startGame(){
+  function startGame(){
 
-  //  $("#start").click(function(){
-  //  $(".modalBackground").hide();
+    $("#start").click(function(){
+    $(".modalBackground").hide();
 
-  // });
+   });
 
-  //   }
-  //  startGame();
+     }
+    startGame();
+
+
+//modified from https://codepen.io/bycreator/pen/RNQmZK//
 
   $(".cards").click(function () {
     if (lockGrid) return;
     if (!$(this).hasClass("selected")) {
-      $(this).toggle("flip");
+      $(this).toggleClass("flip");
       $(this).addClass("selected");
       
     }
@@ -30,6 +33,7 @@ $(document).ready(function () {
   function selectingCards() {
     if ($(".cards.flip.selected").length === 2) {
       matchingCards();
+      
     }
   }
 
@@ -38,16 +42,22 @@ $(document).ready(function () {
       $(".cards.flip.selected").first().data("image") ===
       $(".cards.flip.selected").last().data("image")
     ) {
-      //hideMatchedCards ();
+      hideMatchedCards ();
     } else {
-      nonMatchedCards();
+      notMatchedCards();
+      
     }
   }
 
-  function nonMatchedCards() {
+  function hideMatchedCards(){
+$(".cards.flip.selected").removeClass("selected").animate({opacity: 0});
+
+  }
+
+  function notMatchedCards() {
     lockGrid = true;
     setTimeout(function () {
-      $(".cards.flip").toggleClass("flip");
+      $(".flip").toggleClass("flip");
       lockGrid = false;
     }, 1500);
     $(".cards.flip.selected").removeClass("selected");

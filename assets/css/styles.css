@@ -93,10 +93,10 @@ h1 {
   backface-visibility: hidden;
 }
 
-.cards.flip {
+.flip {
   transform: rotateY(180deg);
 }
 
-.front_card {
+/*.front_card {
     transform: rotateY(180deg);
 }
