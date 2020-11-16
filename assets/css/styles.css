@@ -101,7 +101,7 @@ h1 {
   border-radius: 50%;
   position: absolute;
   box-shadow: 1px 1px 1px rgba(58, 2, 30, 0.4);
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
 }
 
 .flip {

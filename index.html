@@ -19,7 +19,6 @@
 
 <!-----------Start the Game------------>
 
-
     <div class="modalBackground">
       <div id="start">
         <h1>Press here to start!</h1>
@@ -33,8 +32,8 @@
     </header>
 
     <div>Timer:
-<label id="minutes">00</label>:<label id="seconds">00</label>
-
+        <label id="minutes">00</label>:
+        <label id="seconds">00</label>
     </div>
 
     <span></span>
@@ -42,9 +41,9 @@
     <section id="gameGrid" class="game_grid">
 
 <!-----------First Set------------>
-
+    
       <div class="cards" data-image="A">
-        <img class="front_card" src="/assets/images/A.jpg" alt="A" />
+        <img class="front_card" src="assets/images/A.jpg" alt="A" />
         <img
           class="back_card"
           src="/assets/images/sprinkles.jpg"
@@ -364,11 +363,18 @@
         <img class="front_card" src="/assets/images/R.jpg" alt="R" />
         <img
           class="back_card"
-          src="/assets/images/sprinkles.jpg"
+          src="assets/images/sprinkles.jpg"
           alt="Sprinkles"
         />
       </div>
     </section>
+
+    <div class="modalBackground">
+      <div id="restart">
+        <h1>Game Over</h1>
+        <p>Click here to restart!</p>
+      </div>
+    </div>
 
     <script src="assets/js/scripts.js"></script>
   </body>
