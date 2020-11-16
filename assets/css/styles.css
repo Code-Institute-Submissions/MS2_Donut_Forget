@@ -62,7 +62,7 @@ h1 {
 
 .timer {
     font-family: "Open Sans", sans-serif;
-    color: black;
+    color: red;
     font-size: 24px;
     text-align: center;
 }
@@ -114,11 +114,9 @@ h1 {
     position: relative;
 }
 
-
-/*.cards.selected {
-    transform: rotateY(180deg);
+.hidden {
+    visibility: hidden;
 }
-*/
 
 
 /* -----------------Template used from W3 Schools------------------------ */

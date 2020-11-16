@@ -14,7 +14,7 @@ $(document).ready(function() {
         ++totalSeconds;
         secondsLabel.innerHTML = pad(totalSeconds % 60);
         minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-        if (minutesLabel.innerHTML === "03" && secondsLabel.innerHTML === "00") {
+        if (minutesLabel.innerHTML === "05" && secondsLabel.innerHTML === "00") {
             clearInterval(time);
             restartGame();
         }
@@ -73,7 +73,7 @@ $(document).ready(function() {
     }
 
     function hideMatchedCards() {
-        $(".cards.flip.selected").removeClass("selected").animate({ opacity: 0 }, { duration: 2000 });
+        $(".cards.flip.selected").addClass("hidden").removeClass("selected") //.animate({ opacity: 0 }, { duration: 2000 });
     }
 
     function notMatchedCards() {
