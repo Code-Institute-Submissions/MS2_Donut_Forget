@@ -18,6 +18,10 @@ body {
 
 body {
   background-color: #f48fb1;
+   font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    text-align: center;
+
   
   
 }
@@ -56,6 +60,14 @@ h1 {
   font-family: "Sacramento", cursive;
   font-size: 72px;
   text-align: center;
+}
+
+.timer {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    text-align: center;
+
+
 }
 
 .game_grid {
@@ -102,9 +114,6 @@ h1 {
 
  /* -----------------Template used from W3 Schools------------------------ */
 
-
-
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -164,7 +173,7 @@ h1 {
 
 .game_grid {
   width: 743px;
-  height: 743x;
+  height: 743px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -182,25 +191,25 @@ h1 {
 
 #start h1 {
 font-family: "Open Sans", sans-serif;
-  font-size: 52px;
+  font-size: 64px;
   text-align: center;
 }
 
 #start p {
      font-family: "Sacramento", cursive;
-  font-size: 36px;
+  font-size: 48px;
   text-align: center;
 }
 
 h1 {
   font-family: "Sacramento", cursive;
-  font-size: 96px;
+  font-size: 118px;
   text-align: center;
 }
 
 .game_grid {
   width: 967px;
-  height: 967x;
+  height: 967px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -218,19 +227,19 @@ h1 {
 
 #start h1 {
 font-family: "Open Sans", sans-serif;
-  font-size: 52px;
+  font-size: 72px;
   text-align: center;
 }
 
 #start p {
      font-family: "Sacramento", cursive;
-  font-size: 36px;
+  font-size: 64px;
   text-align: center;
 }
 
 h1 {
   font-family: "Sacramento", cursive;
-  font-size: 96px;
+  font-size: 136px;
   text-align: center;
 }
 

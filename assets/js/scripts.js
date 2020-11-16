@@ -2,20 +2,45 @@ $(document).ready(function () {
 
     
 
-  //let hasFlippedCard = false;
+  
   let lockGrid = false;
-  //let firstCard, secondCard;
+  
 
   function startGame(){
 
     $("#start").click(function(){
+        Timer();
+        
     $(".modalBackground").hide();
+
 
    });
 
      }
     startGame();
 
+
+  
+ //borrowed from https://codepen.io/bycreator/pen/RNQmZK//   
+
+
+  let duration = 0;
+    let time = setInterval(Timer, 1000
+    );
+function Timer(){
+   
+     $("#timer").html(`Timer: ${duration}`);
+    $(".cards").click(function () {
+        if ($(hideMatchedCards).length === 36){
+            clearInterval(time);
+        }
+    
+
+    
+});
+
+
+}
 
 //modified from https://codepen.io/bycreator/pen/RNQmZK//
 
@@ -24,7 +49,7 @@ $(document).ready(function () {
     if (!$(this).hasClass("selected")) {
       $(this).toggleClass("flip");
       $(this).addClass("selected");
-      console.log("dataset-image");
+      
     }
 
     selectingCards();
@@ -63,6 +88,8 @@ $(".cards.flip.selected").removeClass("selected").animate({opacity: 0}, {duratio
     $(".cards.flip.selected").removeClass("selected");
   }
 
+
+  //Fisher-Yates method//
   function shuffle() {
     let cards = document.querySelector(".game_grid");
     for (i = cards.children.length; i > -1; i--) {
