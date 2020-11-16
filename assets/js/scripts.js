@@ -1,19 +1,12 @@
 $(document).ready(function () {
 
   let lockGrid = false;  
-  //let firstCard, secondCard;
+  
   let time = 0, totalSeconds = 0, 
     minutesLabel = document.getElementById("minutes"),
     secondsLabel = document.getElementById("seconds");
 
-  function startGame(){
-
-    $("#start").click(function(){
-        time = setInterval(setTimer, 1000);
-        $(".modalBackground").hide();
-    });
-}
-    startGame();
+ 
 
 
     function setTimer() {
@@ -35,26 +28,7 @@ $(document).ready(function () {
         }
     }
   
- //borrowed from https://www.w3schools.com/js/js_timing.asp//   
 
-
-  //let duration = 0;
-    //let time = setInterval(Timer, 1000
-  //  );
-//function Timer(){
-   
- //    $("#timer").html(`Timer: ${duration}`);
-   /// $(".cards").click(function () {
-      //  if ($(hideMatchedCards).length === 36){
-        //    clearInterval(time);
-     //   }
-    
-
-    
-//});
-
-
-//}
 
 //modified from https://codepen.io/bycreator/pen/RNQmZK//
 
@@ -67,7 +41,17 @@ $(document).ready(function () {
     }
 
     selectingCards();
+    endOfGame();
   });
+
+ function startGame(){
+
+    $("#start").click(function(){
+        time = setInterval(setTimer, 1000);
+        $(".modalBackground").hide();
+    });
+}
+    startGame();
 
   function selectingCards() {
     if ($(".cards.flip.selected").length === 2) {
@@ -117,29 +101,22 @@ $("#restart").replaceWith(`<div id="restart">
         <h1>Game Over</h1>
         <p>Click here to restart!</p>
         </div>`);
-    },);
-    restartGame();
-}
-
-}
-
+         restartGame();
+    }, 1000);
    
-
-
+}
 
 
 
 function restartGame(){
-if (hideMatchedCards ().length === 36);
- $(".modalBackground").show();
  $("#restart").click(function(){
-     clearInterval(time);
-        time = setInterval(setTimer, 1000);
+       time = setInterval(setTimer, 1000);
         $(".modalBackground").hide();
-
+  setTimer();
+    shuffle();
+    });
+    
+  
+};
 
 }
-
-, restartGame());
-
-};
