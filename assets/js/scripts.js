@@ -23,7 +23,6 @@ $(document).ready(function() {
             })
         }
     }
-
     function pad(val) {
         let valString = val + "";
         if (valString.length < 2) {
@@ -48,6 +47,7 @@ $(document).ready(function() {
         $("#start").click(function() {
             time = setInterval(setTimer, 1000);
             $(".modalBackground").hide();
+            console.log("Lets start!")
         });
     }
     startGame();
@@ -55,6 +55,7 @@ $(document).ready(function() {
     function selectingCards() {
         if ($(".cards.flip.selected").length === 2) {
             matchingCards();
+            console.log("Have 2 cards been flipped?")
         }
     }
 
@@ -64,8 +65,10 @@ $(document).ready(function() {
             $(".cards.flip.selected").last().data("image")
         ) {
             hideMatchedCards();
+            console.log("Cards match!")
         } else {
             notMatchedCards();
+            console.log("Cards dont match!")
         }
     }
 
@@ -90,20 +93,20 @@ $(document).ready(function() {
         }
     }
     shuffle();
-    console.log("is it shuffling?");
+    console.log("Is it shuffling?");
 });
-
+ 
 function endOfGame() {
     if ($(".hidden").length === 36) {
         setTimeout(function() {
-            $("#restart").replaceWith(`<div id="restart">
+            $("#restart").replaceWith(`<div id="game_over">
         <h1>Game Over</h1>
         <p>Click here to restart!</p>
         </div>`);
             restartGame();
         }, 1000);
         clearInterval(time);
-        console.log("is it working?");
+        console.log("Is the counter working?");
     }
 
     function restartGame() {
@@ -115,7 +118,5 @@ function endOfGame() {
             shuffle();
             console.log("is it working?");
         });
-
     };
-
 }
