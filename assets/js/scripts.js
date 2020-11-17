@@ -13,11 +13,12 @@ $(document).ready(function() {
         minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
         if (minutesLabel.innerHTML === "05" && secondsLabel.innerHTML === "00") {
             clearInterval(time);
+            console.log("is it counting?");
             $(".cards").click(function() {
                 if ($(".hidden").length === 36) {
                     clearInterval(time);
                     restartGame();
-                    console.log("is it working?");
+                    console.log(`is it switching?`);
                 }
             })
         }
@@ -31,9 +32,6 @@ $(document).ready(function() {
             return valString;
         }
     }
-
-
-
     //modified from https://codepen.io/bycreator/pen/RNQmZK//
 
     $(".cards").click(function() {
@@ -92,6 +90,7 @@ $(document).ready(function() {
         }
     }
     shuffle();
+    console.log("is it shuffling?");
 });
 
 function endOfGame() {
