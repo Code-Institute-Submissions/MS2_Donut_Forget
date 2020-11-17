@@ -22,7 +22,7 @@ As a user I would like:
 
 ### Design
 
-Wireframes
+*Wireframes
 The website was initially designed using Balsamiq to create several wireframes (link below). 
 [Wireframes](assets/images/Wireframe.png) 
 
@@ -62,9 +62,11 @@ I have used 2 Google fonts in designing this game. "Sacramento", cursive has bee
 ### Technologies Used
 
 Languages
-* [HTML5](https://en.wikipedia.org/wiki/HTML5)
-* [CSS3](https://en.wikipedia.org/wiki/CSS)
-* [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
+* 46.8% [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* 23.9% [CSS3](https://en.wikipedia.org/wiki/CSS)
+* 15.2% [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
+
+In Github the languages used are heavily reliant on HTML, this is probably because all of the images used are placed in <divs> in the HTML script. The CSS is also quite weighted due to the styling of the images to appear as circles in the game. 
 
 Frameworks and Programs
 * [JQuery](https://jquery.com/)
@@ -127,38 +129,26 @@ In order to locally run this code, this project would have to be cloned from Git
 3. Next, when in the dropdown “Clone with HTTPS” section click the clipboard button next to the URL to copy the repository's clone URL.
 4. Afterwards, enter into the local IDE and open Git Bash.
 5. Then, change the current working directory into the location of where the cloned directory is to be made.
-6. Next, type in “git clone” and paste in the URL that was copied earlier from the “Clone with HTTPS” section i.e.:
-    * git clone: https://github.com/monanorremo/MS2_Donut_Forget.git
+6. Next, type in “git clone” and paste in the URL that was copied earlier from the “Clone with HTTPS” section i.e.:git clone: https://github.com/monanorremo/MS2_Donut_Forget.git
 7. Lastly, tap the enter button on the keyboard to create the local clone.
 
 ## Credits
 
 ### Media
 Some of the content for this website was taken from the following sources:
-* Home page background
-    * wallpaperflare.com
-* High scores page background
-    * wallpaperflare.com
-* The Simpsons character images
-    * Wikipedia
-* Homer sound effects
-    * soundboard.com
-* Ticking clock sound effect
-    * freesoundslibrary.com
+* Shutterstock
+* Creative Market
  
-
 ### Code
 Some of the code for this website was taken from the following sources:
-* All Modals
-    * https://getbootstrap.com/docs/4.5/components/modal/
-* Cards
-    * https://getbootstrap.com/docs/4.5/components/card/
-* Card flip effect
-    * https://3dtransforms.desandro.com/card-flip
-* Card animations
-    * https://3dtransforms.desandro.com/card-flip
-* Settings modal toggle switches
-    * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch
- 
+
+* Youtube:
+    * https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=1907s
+    * https://www.youtube.com/watch?v=bbb9dZotsOc&t=1630s
+    * https://www.youtube.com/watch?v=ZniVgo8U7ek&t=474s
+    * https://www.youtube.com/watch?v=Eq4bUSWGv1Y&list=LL2enFJYYjL4OCp7Cu37PM2g&index=5&t=858s
+    * https://www.youtube.com/watch?v=zEo42QuZPJw&list=LL2enFJYYjL4OCp7Cu37PM2g
+
 
 ## Acknowledgements
+I would like to thank my mentor Adegbenga Adeye and my patient children for letting me work on my milestone project. 

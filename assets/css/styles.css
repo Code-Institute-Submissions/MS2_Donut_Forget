@@ -62,7 +62,7 @@ h1 {
 
 .timer {
     font-family: "Open Sans", sans-serif;
-    color: red;
+    color: black;
     font-size: 24px;
     text-align: center;
 }
@@ -140,6 +140,12 @@ h1 {
         font-size: 86px;
         text-align: center;
     }
+    .timer {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+        font-size: 24px;
+        text-align: center;
+    }
     .game_grid {
         width: 575px;
         height: 575px;
@@ -170,6 +176,12 @@ h1 {
         font-size: 96px;
         text-align: center;
     }
+    .timer {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+        font-size: 36px;
+        text-align: center;
+    }
     .game_grid {
         width: 743px;
         height: 743px;
@@ -197,7 +209,13 @@ h1 {
     }
     h1 {
         font-family: "Sacramento", cursive;
-        font-size: 118px;
+        font-size: 136px;
+        text-align: center;
+    }
+    .timer {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+        font-size: 48px;
         text-align: center;
     }
     .game_grid {
@@ -228,6 +246,12 @@ h1 {
     h1 {
         font-family: "Sacramento", cursive;
         font-size: 136px;
+        text-align: center;
+    }
+    .timer {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+        font-size: 56px;
         text-align: center;
     }
     .game_grid {

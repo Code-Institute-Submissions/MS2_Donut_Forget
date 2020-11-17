@@ -7,9 +7,6 @@ $(document).ready(function() {
         minutesLabel = document.getElementById("minutes"),
         secondsLabel = document.getElementById("seconds");
 
-
-
-
     function setTimer() {
         ++totalSeconds;
         secondsLabel.innerHTML = pad(totalSeconds % 60);
@@ -20,12 +17,9 @@ $(document).ready(function() {
                 if ($(".hidden").length === 36) {
                     clearInterval(time);
                     restartGame();
+                    console.log("is it working?");
                 }
             })
-
-
-
-
         }
     }
 
@@ -47,15 +41,12 @@ $(document).ready(function() {
         if (!$(this).hasClass("selected")) {
             $(this).toggleClass("flip");
             $(this).addClass("selected");
-
         }
-
         selectingCards();
         endOfGame();
     });
 
     function startGame() {
-
         $("#start").click(function() {
             time = setInterval(setTimer, 1000);
             $(".modalBackground").hide();
@@ -77,13 +68,11 @@ $(document).ready(function() {
             hideMatchedCards();
         } else {
             notMatchedCards();
-
         }
     }
 
     function hideMatchedCards() {
         $(".cards.flip.selected").addClass("hidden").removeClass("selected")
-
     }
 
     function notMatchedCards() {
@@ -114,19 +103,19 @@ function endOfGame() {
         </div>`);
             restartGame();
         }, 1000);
-
+        clearInterval(time);
+        console.log("is it working?");
     }
-
-
 
     function restartGame() {
         $("#restart").click(function() {
             time = setInterval(setTimer, 1000);
             $(".modalBackground").hide();
+            location.reload();
             setTimer();
             shuffle();
+            console.log("is it working?");
         });
-
 
     };
 
