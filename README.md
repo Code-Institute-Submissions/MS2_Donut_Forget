@@ -41,11 +41,6 @@ I have used 2 Google fonts in designing this game. "Sacramento", cursive has bee
 ## Features
 
 ### Existing Features
-* Home page:
-    * Animated text and main menu, and Simpsons theme tune music
-    * Main menu with links to all site pages, settings menu and help modal.
-    * Settings menu with controls to enable/disable Music, Sound effects and Persistent Storage (toggles between local storage and session storage).
-
 * Start Button
     * The game starts with a start button in the game's modal. A short explanation suggesting the player to match cards is provided. When the button is clicked the game starts and the timer fires up. 
     
@@ -95,11 +90,11 @@ Frameworks and Programs
 
 ## Testing
 
-During the build
+### During the build
 In the build of this game, it was continously previewed locally as each new function was added. Dev tools for Chrome and Firefox were used to make sure the layout was responsive for all screen sizes, with mobile first. I used console.log messages throughout to check the outputs validity and troubleshoot any issues. 
 By playing the game, I tested the click events, for start, flipping, etc. For the flipping I ensured that it wasn't possible to click more than 2 cards before they had matched or flipped back. 
 
-Deployment
+### Deployment
 Once the game was deployed, it was tested on multiple devices and feedback was also requested from my children, friends and co-workers.  
 
 ## User Stories
@@ -118,20 +113,52 @@ Do the initial goals of the user expectations meet the actual experience?
 ## Deployment
 When the game was finished, these steps were taken to deploy successfully:
 1. First, the repository section on GitHub was entered and the project link containing the website and wireframes to be deployed, was clicked on.
-2. Then, the settings tab underneath the “Milestone-Project-2” heading, was clicked on to enter its settings.
+2. Then, the settings tab underneath the “MS2_Donut_Forget” heading, was clicked on to enter its settings.
 3. Next, the settings page was then scrolled down until the sub-title “GitHub Pages” was found.
 4. Later, under “GitHub Pages” a sub-title called “Source” was located. Under the “Source” sub-title was a button labelled “None”. This “None” button was clicked on to reveal a dropdown menu.
 5. In the dropdown menu the option called “master branch” was selected.
 6. After selecting the “master branch”, the webpage refreshed automatically and deployed the website.
-7. Finally, the link to this newly deployed website, was taken from the “GitHub Pages” section.
+7. Finally, the link to this newly deployed website, was taken from the “GitHub Pages” section, https://monanorremo.github.io/MS2_Donut_Forget/
 
-Running the code locally
+### Running the code locally
 In order to locally run this code, this project would have to be cloned from GitHub using the following steps:
 1. First enter the list of repositories section of GitHub.
-2. Then, under the repository name of the project, click on the “Clone or download” button.
+2. Then, under the repository name of the project, click on the “Code” button.
 3. Next, when in the dropdown “Clone with HTTPS” section click the clipboard button next to the URL to copy the repository's clone URL.
 4. Afterwards, enter into the local IDE and open Git Bash.
 5. Then, change the current working directory into the location of where the cloned directory is to be made.
 6. Next, type in “git clone” and paste in the URL that was copied earlier from the “Clone with HTTPS” section i.e.:
-    * git clone: https://github.com/VioletViolaVi/Milestone-Project-2.git
+    * git clone: https://github.com/monanorremo/MS2_Donut_Forget.git
 7. Lastly, tap the enter button on the keyboard to create the local clone.
+
+## Credits
+
+### Media
+Some of the content for this website was taken from the following sources:
+* Home page background
+    * wallpaperflare.com
+* High scores page background
+    * wallpaperflare.com
+* The Simpsons character images
+    * Wikipedia
+* Homer sound effects
+    * soundboard.com
+* Ticking clock sound effect
+    * freesoundslibrary.com
+ 
+
+### Code
+Some of the code for this website was taken from the following sources:
+* All Modals
+    * https://getbootstrap.com/docs/4.5/components/modal/
+* Cards
+    * https://getbootstrap.com/docs/4.5/components/card/
+* Card flip effect
+    * https://3dtransforms.desandro.com/card-flip
+* Card animations
+    * https://3dtransforms.desandro.com/card-flip
+* Settings modal toggle switches
+    * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch
+ 
+
+## Acknowledgements
