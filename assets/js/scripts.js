@@ -2,10 +2,10 @@ $(document).ready(function() {
 
     let lockGrid = false;
 
-    let time = 0,
-        totalSeconds = 0,
-        minutesLabel = document.getElementById("minutes"),
-        secondsLabel = document.getElementById("seconds");
+    let time = 0;
+    totalSeconds = 0;
+    minutesLabel = document.getElementById("minutes");
+    secondsLabel = document.getElementById("seconds");
 
     function setTimer() {
         ++totalSeconds;
@@ -23,6 +23,7 @@ $(document).ready(function() {
             })
         }
     }
+
     function pad(val) {
         let valString = val + "";
         if (valString.length < 2) {
@@ -55,7 +56,7 @@ $(document).ready(function() {
     function selectingCards() {
         if ($(".cards.flip.selected").length === 2) {
             matchingCards();
-            console.log("Have 2 cards been flipped?")
+            console.log("Have 2 cards been flipped?");
         }
     }
 
@@ -68,7 +69,7 @@ $(document).ready(function() {
             console.log("Cards match!")
         } else {
             notMatchedCards();
-            console.log("Cards dont match!")
+            console.log("Cards dont match!");
         }
     }
 
@@ -95,7 +96,7 @@ $(document).ready(function() {
     shuffle();
     console.log("Is it shuffling?");
 });
- 
+
 function endOfGame() {
     if ($(".hidden").length === 36) {
         setTimeout(function() {

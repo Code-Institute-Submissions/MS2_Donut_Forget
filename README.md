@@ -95,9 +95,28 @@ Frameworks and Programs
 ### During the build
 In the build of this game, it was continously previewed locally as each new function was added. Dev tools for Chrome and Firefox were used to make sure the layout was responsive for all screen sizes, with mobile first. I used console.log messages throughout to check the outputs validity and troubleshoot any issues. 
 By playing the game, I tested the click events, for start, flipping, etc. For the flipping I ensured that it wasn't possible to click more than 2 cards before they had matched or flipped back. 
+![console1](assets/images/console1.png)  
+![console2](assets/images/console2.png)  
 
 ### Deployment
 Once the game was deployed, it was tested on multiple devices and feedback was also requested from my children, friends and co-workers.  
+
+### Responsive / Device testing
+The following devices were used to test the site:
+* 24" Monitor
+* 15.6" Laptop Display
+* 10" Galaxy Tab 4.0 (Portrait and Landscape)
+* 5.8" Samsung S8 (Portrait and Landscape)
+* 4.7" iPhone 8 (Portrait and Landscape)
+
+### Code Validation
+* [W3 HTML validator](https://validator.w3.org/#validate_by_input)
+    * All HTML code was checked and any errors found were fixed.
+* [W3 CSS validator (jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    * CSS code was checked and no errors were found.
+* [JSLint](https://jslint.com/)
+    * All JavaScript/JQuery code was checked to ensure all code complies with ES6 standards.
+
 
 ## User Stories
 
