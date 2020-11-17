@@ -16,7 +16,16 @@ $(document).ready(function() {
         minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
         if (minutesLabel.innerHTML === "05" && secondsLabel.innerHTML === "00") {
             clearInterval(time);
-            restartGame();
+            $(".cards").click(function() {
+                if ($(".hidden").length === 36) {
+                    clearInterval(time);
+                    restartGame();
+                }
+            })
+
+
+
+
         }
     }
 
@@ -73,7 +82,8 @@ $(document).ready(function() {
     }
 
     function hideMatchedCards() {
-        $(".cards.flip.selected").addClass("hidden").removeClass("selected") //.animate({ opacity: 0 }, { duration: 2000 });
+        $(".cards.flip.selected").addClass("hidden").removeClass("selected")
+
     }
 
     function notMatchedCards() {
@@ -96,7 +106,7 @@ $(document).ready(function() {
 });
 
 function endOfGame() {
-    if ($(hideMatchedCards).length === 36) {
+    if ($(".hidden").length === 36) {
         setTimeout(function() {
             $("#restart").replaceWith(`<div id="restart">
         <h1>Game Over</h1>
