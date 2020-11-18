@@ -1,29 +1,23 @@
 $(document).ready(function() {
-
-    let lockGrid = false;
-
-    let time = 0;
-    totalSeconds = 0;
-    minutesLabel = document.getElementById("minutes");
+    let time = 0,
+    lockGrid = false,
+    totalSeconds = 0,
+    minutesLabel = document.getElementById("minutes"),
     secondsLabel = document.getElementById("seconds");
-
     function setTimer() {
         ++totalSeconds;
         secondsLabel.innerHTML = pad(totalSeconds % 60);
         minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
         if (minutesLabel.innerHTML === "05" && secondsLabel.innerHTML === "00") {
             clearInterval(time);
-            console.log("is it counting?");
             $(".cards").click(function() {
                 if ($(".hidden").length === 36) {
                     clearInterval(time);
                     restartGame();
-                    console.log(`is it switching?`);
                 }
-            })
+            });
         }
     }
-
     function pad(val) {
         let valString = val + "";
         if (valString.length < 2) {
@@ -33,9 +27,10 @@ $(document).ready(function() {
         }
     }
     //modified from https://codepen.io/bycreator/pen/RNQmZK//
-
     $(".cards").click(function() {
-        if (lockGrid) return;
+        if (lockGrid) {
+             return;
+        }
         if (!$(this).hasClass("selected")) {
             $(this).toggleClass("flip");
             $(this).addClass("selected");
@@ -43,23 +38,18 @@ $(document).ready(function() {
         selectingCards();
         endOfGame();
     });
-
     function startGame() {
         $("#start").click(function() {
             time = setInterval(setTimer, 1000);
             $(".modalBackground").hide();
-            console.log("Lets start!");
         });
     }
     startGame();
-
     function selectingCards() {
         if ($(".cards.flip.selected").length === 2) {
             matchingCards();
-            console.log("Have 2 cards been flipped?");
         }
     }
-
     function matchingCards() {
         if (
             $(".cards.flip.selected").first().data("image") ===
@@ -67,17 +57,13 @@ $(document).ready(function() {
         ) {
             hideMatchedCards();
             endOfGame();
-            console.log("Cards match!");
         } else {
             notMatchedCards();
-            console.log("Cards dont match!");
         }
     }
-
     function hideMatchedCards() {
         $(".cards.flip.selected").addClass("hidden").removeClass("selected");
     }
-
     function notMatchedCards() {
         lockGrid = true;
         setTimeout(function() {
@@ -86,7 +72,6 @@ $(document).ready(function() {
         }, 1500);
         $(".cards.flip.selected").removeClass("selected");
     }
-
     //Fisher-Yates method//
     function shuffle() {
         let cards = document.querySelector(".game_grid");
@@ -95,25 +80,20 @@ $(document).ready(function() {
         }
     }
     shuffle();
-    console.log("Is it shuffling?");
-});
 
-function endOfGame() {
-    if ($(".hidden").length === 36) {
-        $(".game_grid").html(`<h2>Game Over</h2>
-        <p>Click here to restart!</p>`);
-        restartGame();
-        clearInterval(time);
-        console.log("Is the counter working?");
+    function endOfGame() {
+        if ($(".hidden").length === 36) {
+            $(".game_grid").html(`<h2>Game Over</h2>
+            <p>Click here to restart!</p>`);
+            restartGame();
+        }
     }
-
     function restartGame() {
         $(".game_grid p").click(function() {
+            clearInterval(time);
             location.reload();
             setTimer();
             shuffle();
-            console.log("is it working?");
         });
-
-    };
-};
+    }
+});
