@@ -107,17 +107,13 @@ function endOfGame() {
         console.log("Is the counter working?");
     }
 
-
     function restartGame() {
-        if ($(endOfGame)) {
-            $("#gameGrid").click(function() {
-                time = setInterval(setTimer, 1000);
-                location.reload();
-                setTimer();
-                shuffle();
-                console.log("is it working?");
-            }, );
+        $(".game_grid p").click(function() {
+            location.reload();
+            setTimer();
+            shuffle();
+            console.log("is it working?");
+        });
 
-        };
-    }
+    };
 };
