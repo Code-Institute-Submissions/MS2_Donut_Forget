@@ -48,7 +48,7 @@ $(document).ready(function() {
         $("#start").click(function() {
             time = setInterval(setTimer, 1000);
             $(".modalBackground").hide();
-            console.log("Lets start!")
+            console.log("Lets start!");
         });
     }
     startGame();
@@ -66,7 +66,8 @@ $(document).ready(function() {
             $(".cards.flip.selected").last().data("image")
         ) {
             hideMatchedCards();
-            console.log("Cards match!")
+            endOfGame();
+            console.log("Cards match!");
         } else {
             notMatchedCards();
             console.log("Cards dont match!");
@@ -74,7 +75,7 @@ $(document).ready(function() {
     }
 
     function hideMatchedCards() {
-        $(".cards.flip.selected").addClass("hidden").removeClass("selected")
+        $(".cards.flip.selected").addClass("hidden").removeClass("selected");
     }
 
     function notMatchedCards() {
@@ -99,25 +100,24 @@ $(document).ready(function() {
 
 function endOfGame() {
     if ($(".hidden").length === 36) {
-        setTimeout(function() {
-            $("#restart").replaceWith(`<div id="game_over">
-        <h1>Game Over</h1>
-        <p>Click here to restart!</p>
-        </div>`);
-            restartGame();
-        }, 1000);
+        $(".game_grid").html(`<h2>Game Over</h2>
+        <p>Click here to restart!</p>`);
+        restartGame();
         clearInterval(time);
         console.log("Is the counter working?");
     }
 
+
     function restartGame() {
-        $("#restart").click(function() {
-            time = setInterval(setTimer, 1000);
-            $(".modalBackground").hide();
-            location.reload();
-            setTimer();
-            shuffle();
-            console.log("is it working?");
-        });
-    };
-}
+        if ($(endOfGame)) {
+            $("#gameGrid").click(function() {
+                time = setInterval(setTimer, 1000);
+                location.reload();
+                setTimer();
+                shuffle();
+                console.log("is it working?");
+            }, );
+
+        };
+    }
+};

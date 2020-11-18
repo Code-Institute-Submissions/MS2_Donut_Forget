@@ -77,6 +77,20 @@ h1 {
     perspective: 1000px;
 }
 
+.game_grid h2 {
+    font-family: "Sacramento", cursive;
+    color: black;
+    font-size: 58px;
+    text-align: center;
+}
+
+.game_grid p {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
 .cards {
     width: calc(16.66% - 10px);
     height: calc(16.66% - 10px);
